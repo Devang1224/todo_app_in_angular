@@ -1,0 +1,12 @@
+<div class="list_container">
+    <input type="checkbox" (change)="onTaskComplete()">
+    <p *ngIf="editTodo.id!=todo.id">{{todo.value}}</p>
+    <input 
+      type="text"
+      *ngIf="editTodo.id==todo.id" 
+      [(ngModel)]="editTodo.value"
+      (keyup.enter)="onTodoUpdated($event,editTodo.id)"
+    >
+    <button class="edit_button" (click)="onTodoEdit(todo)">Edit</button>
+    <button class="delete_button" (click)="onTodoDelete()">Delete</button>
+  </div>

@@ -1,0 +1,28 @@
+.list_container{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.list_container button{
+    cursor: pointer;
+}
+.list_container input{
+    cursor: pointer;
+}
+
+.list_container button{
+    padding:5px;
+    border:none;
+    border-radius: 10px;
+}
+
+.list_container .edit_button{
+    background-color: rgb(45, 193, 45);
+}
+
+.list_container .delete_button{
+    background-color: rgb(231, 65, 53);
+}
